@@ -69,12 +69,13 @@
 ## 초기 설계
 
 1. 영단어에 해당하는 "숫자"를 딕셔너리로 만든다
-2. [replace()](https://ooyoung.tistory.com/77)로 바꿔준다. (에러 사항 - int로 변환해 주어야함)
+2. [replace()](https://ooyoung.tistory.com/77)로 바꿔준다. (에러 - int로 변환해 주어야함)
 
 ---------------------
 # number_str.py 모음
 # [없는 숫자 더하기](https://school.programmers.co.kr/learn/courses/30/lessons/86051)
 - 0~9까지의 집합에서 주어진 숫자배열과 차집합의 합
+- 변경 : 0~9의 합 45에서 주어진 배열의 합의 차
 
 # [자릿수 더하기](https://school.programmers.co.kr/learn/courses/30/lessons/12931)
 - 분리하여 map()활용 int변환 후 더하기

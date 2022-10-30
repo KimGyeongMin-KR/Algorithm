@@ -1,8 +1,6 @@
 # 없는 숫자 더하기
 def solution(numbers):
-    std = {i for i in range(10)}
-    answer = sum(std-set(numbers))
-    return answer
+    return 45 - sum(numbers)
 
 # 자릿수 더하기
 def solution(n):
