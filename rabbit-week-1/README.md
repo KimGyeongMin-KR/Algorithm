@@ -4,7 +4,7 @@
 
 
 # [비밀 지도](https://school.programmers.co.kr/learn/courses/30/lessons/17681#)
-
+- [나의 답안](https://github.com/KimGyeongMin-KR/algoritm/blob/main/rabbit-week-1/secreet_map.py)
 ## 초기 설계
 
 1. 각 정수의 숫자들을 2진수 비트열로 바꿔준다 -> [2진수로 변환하기](https://brownbears.tistory.com/467)
@@ -26,7 +26,7 @@
 
 
 # [완주하지 못한 선수](https://school.programmers.co.kr/learn/courses/30/lessons/42576)
-
+- [나의 답안](https://github.com/KimGyeongMin-KR/algoritm/blob/main/rabbit-week-1/an_unfinished_player.py)
 ## 초기 설계
 
 1. 완주하지 못한 사람은 1명이기 때문에 집합으로 빼서 한명이 나온다면 정답
@@ -48,7 +48,7 @@
 
 
 # [체육복](https://school.programmers.co.kr/learn/courses/30/lessons/42862)
-
+- [나의 답안](https://github.com/KimGyeongMin-KR/algoritm/blob/main/rabbit-week-1/workout_clothes.py)
 ## 초기 설계
 
 1. 도난 배열과 여벌이 배열의 교집합을 각각 빼준다.
@@ -58,14 +58,14 @@
 
 
 # [약수의 개수와 덧셈](https://school.programmers.co.kr/learn/courses/30/lessons/77884)
-
+- [나의 답안](https://github.com/KimGyeongMin-KR/algoritm/blob/main/rabbit-week-1/divisor_num.py)
 ## 초기 설계
 - 약수의 개수가 홀수인 경우를 좀 생각해 보니 어떤 수의 제곱인 경우 홀수가 됨
 - 제곱근이 정수 값과 같은지 판단하면 끝
 
 
 # [숫자 문자열과 영단어](https://school.programmers.co.kr/learn/courses/30/lessons/81301)
-
+- [나의 답안](https://github.com/KimGyeongMin-KR/algoritm/blob/main/rabbit-week-1/num_str_en.py)
 ## 초기 설계
 
 1. 영단어에 해당하는 "숫자"를 딕셔너리로 만든다
@@ -73,6 +73,7 @@
 
 ---------------------
 # number_str.py 모음
+- [나의 답안](https://github.com/KimGyeongMin-KR/algoritm/blob/main/rabbit-week-1/number_str.py)
 # [없는 숫자 더하기](https://school.programmers.co.kr/learn/courses/30/lessons/86051)
 - 0~9까지의 집합에서 주어진 숫자배열과 차집합의 합
 - 변경 : 0~9의 합 45에서 주어진 배열의 합의 차
