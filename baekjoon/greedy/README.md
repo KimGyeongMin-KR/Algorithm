@@ -27,3 +27,10 @@
 ## 에러
 1. 초반 생각에 회의를 어떻게 지워나가야 하는 것에 시간을 투자함
 2. 회의가 시작하마자 끝나는 경우를 따로 나눠보려고 하여 오히려 생각이나 로직이 꼬임
+
+
+# [보물](https://www.acmicpc.net/problem/1026)
+- [나의 답안](https://github.com/KimGyeongMin-KR/algoritm/blob/main/baekjoon/greedy/S4-1026.py)
+
+## 초기 설계
+- 문제에서는 두 번째 배열의 재배열을 금지하였지만 최솟값을 출력하는 것이기에 상관 없다.
