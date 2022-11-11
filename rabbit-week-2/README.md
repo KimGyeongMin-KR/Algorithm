@@ -5,11 +5,11 @@
 
 # [실패율](https://school.programmers.co.kr/learn/courses/30/lessons/42889)
 - [나의 답안](https://github.com/KimGyeongMin-KR/algoritm/blob/main/rabbit-week-2/failure_rate.py)
-## 초기 설계
 
 ***실패율 정의에 주목하였음***
 실패율은 다음과 같이 정의한다.
 - 스테이지에 도달했으나 아직 클리어하지 못한 플레이어의 수 / 스테이지에 도달한 플레이어 수
+## 초기 설계
 
 1. 각 스테이지에 몇 명이 있는지 확인 (스테이지 == 인덱스)
 2. (각 스테이지 실패율, 인덱스) 배열을 만듦
@@ -19,26 +19,21 @@
 
 # [소수 만들기](https://school.programmers.co.kr/learn/courses/30/lessons/12977)
 - [나의 답안](https://github.com/KimGyeongMin-KR/algoritm/blob/main/rabbit-week-2/creating_decimal_number.py)
-## 초기 설계
-
 1. nC3 조합들 각각 합을 배열에 담는다.
 2. 배열에서 각 수를 제곱근까지의 수로 소수를 판별 후 개수 반환
 
 # [K번째수](https://school.programmers.co.kr/learn/courses/30/lessons/42748)
 - [나의 답안](https://github.com/KimGyeongMin-KR/algoritm/blob/main/rabbit-week-2/k_num.py)
-## 초기 설계
 - 슬라이싱 후 해당 인덱스의 값을 담은 배열을 반환
 
 
 # [예산](https://school.programmers.co.kr/learn/courses/30/lessons/12982)
 - [나의 답안](https://github.com/KimGyeongMin-KR/algoritm/blob/main/rabbit-week-2/budget.py)
-## 초기 설계
 - 정렬된 신청금 배열을 돌며 예산이 음수가 되기 전까지 빼다가 횟수 반환
 
 
 # [같은 숫자는 싫어](https://school.programmers.co.kr/learn/courses/30/lessons/12906)
 - [나의 답안](https://github.com/KimGyeongMin-KR/algoritm/blob/main/rabbit-week-2/not_same_num.py)
-## 초기 설계
 - 이전의 숫자와 다르다면 배열에 담아서 반환
 
 ---------------------
