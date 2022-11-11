@@ -7,6 +7,7 @@
 - [나의 답안](https://github.com/KimGyeongMin-KR/algoritm/blob/main/rabbit-week-2/failure_rate.py)
 
 ***실패율 정의에 주목하였음***
+
 실패율은 다음과 같이 정의한다.
 - 스테이지에 도달했으나 아직 클리어하지 못한 플레이어의 수 / 스테이지에 도달한 플레이어 수
 ## 초기 설계
