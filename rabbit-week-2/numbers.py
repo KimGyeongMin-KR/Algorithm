@@ -1,10 +1,10 @@
 # 음양 더하기
 def solution(absolutes, signs):
-    answer = 0
-    for idx in range(len(absolutes)):
-        num = absolutes[idx] if signs[idx] else -absolutes[idx]
-        answer += num
-    return answer
+    # answer = 0
+    # for idx in range(len(absolutes)):
+    #     num = absolutes[idx] if signs[idx] else -absolutes[idx]
+    #     answer += num
+    return sum([i if signs[idx] else -i for idx, i in enumerate(absolutes)])
 
 
 # 두 정수 사이의 합
