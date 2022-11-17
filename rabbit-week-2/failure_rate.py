@@ -16,8 +16,6 @@ def solution(N, stages):
     return answer
 
 # 개선 코드
-# sum()함수 있을 때 O(N^2)
-# sorted() O(NlogN)
 def solution(N, stages):
 
     stage = [0] * (N+2)

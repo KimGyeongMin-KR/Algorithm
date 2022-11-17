@@ -12,6 +12,6 @@ def solution(nums):
         else:
             cnt += 1
 
-    return cnt if cnt!=0 else 0
+    return cnt
 
 # combinations 쓰지 않고 만들어 보기
