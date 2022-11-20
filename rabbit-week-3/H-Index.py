@@ -54,3 +54,12 @@ def solution(m):
                 count += 1
         if count >= h:
             return h
+
+
+# 참고하면 좋을 코드 0.0002s
+def solution(citations):
+    citations.sort(reverse = True)
+    for i, x in enumerate(citations) :
+        if x <= i:
+            return i
+    return len(citations)

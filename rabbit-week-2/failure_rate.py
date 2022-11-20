@@ -33,3 +33,15 @@ def solution(N, stages):
     answer = [ x[1] for x in failer_sorted ]
     
     return answer
+
+
+
+# 참고하면 좋을 코드
+from collections import Counter
+
+def solution(N, stages):
+    stage = Counter(stages)
+    total = [len([x for x in stages if x >= i+1]) for i in range(N)]
+    result = [(stage[x+1] / total[x] if total[x] != 0 else 0, x+1) for x in range(N)]
+    result.sort(reverse = True, key = lambda x : x[0])
+    return [x[1] for x in result]

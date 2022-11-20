@@ -47,7 +47,7 @@
 
 
 # [콜라츠 추측](https://school.programmers.co.kr/learn/courses/30/lessons/12943)
-- [나의 답안](https://github.com/KimGyeongMin-KR/algoritm/blob/main/rabbit-week-3/not_same_num.py)
+- [나의 답안](https://github.com/KimGyeongMin-KR/algoritm/blob/main/rabbit-week-3/C_conjecture.py)
 - 홀짝 판단 후 계산, 계산 횟수 체크 
 
 ---------------------
