@@ -3,6 +3,87 @@
 ( 숫자의 표현, JandenCase, 이진 변환 반복하기, 최솟값 만들기)
 
 
+# [전력망](https://school.programmers.co.kr/learn/courses/30/lessons/86971)
+
+## 설계
+- 딕셔너리, 리스트 형태의 그래프를 생성
+- 간선을 하나씩 제거하고 해당 노드를 골라서 bfs로 길이 반환 후 간선 복구
+- 차이를 구하고 필요 시(더 낮을 때) 갱신
+
+<details>
+<summary>나의 정답</summary>
+
+```python
+from collections import deque
+graph = {}
+
+def bfs(t):
+    queue = deque([t])
+    v = set()
+    while queue:
+        node = queue.popleft()
+        if node not in v:
+            v.add(node)
+            queue += deque(graph[node])
+    return len(v)
+
+def solution(n, wires):
+    global graph
+
+    answer = n
+    graph = {x: set() for x in range(1, n+1)}
+
+    for i,j in wires:
+        graph[i].add(j)
+        graph[j].add(i)
+        
+    for i, j in wires:
+        graph[i] -= {j}
+        cnt = abs(n - 2*bfs(i))
+        graph[i].add(j)
+
+        if cnt < answer:
+            answer = cnt
+    return answer
+```
+</details>
+
+- zip(내림차순배열, 오름차순배열)
+
+
+# [피로도](https://school.programmers.co.kr/learn/courses/30/lessons/87946)
+- 복습 필요
+## 설계
+- 방문할 수 있는 모든 곳을 탐색
+    - 남은 피로도를 기준으로 판단
+- 가장 큰 던전을 입장한 횟수 반환
+
+<details>
+<summary>정답 코드</summary>
+
+```python
+def dfs(k, d,  cnt):
+    global answer
+    if cnt > answer:
+        answer = cnt
+        
+    for i in range(N):
+        if k >= d[i][0]:
+            dfs(k - d[i][1], d[:i] + d[i+1:], cnt + 1)
+
+
+def solution(k, dungeons):
+    global v, N
+    N = len(dungeons)
+    v = [0] * N
+    dfs(k, dungeons, 0)
+    
+    return answer
+
+
+```
+</details>
+
 
 # [숫자의 표현](https://school.programmers.co.kr/learn/courses/30/lessons/12924)
 - 문제 : 숫자 n이 주어졌을 때, 연속된 자연수의 합으로 n을 만들 수 있는 경우의 수
