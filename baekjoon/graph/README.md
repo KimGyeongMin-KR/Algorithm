@@ -19,7 +19,7 @@
 
 # [단지번호붙이기/S1](https://www.acmicpc.net/problem/2667)
 
-## 초기 설계
+## 설계
 
 1. 전체를 순회
     - 1의 값이 나온다면, queue 인덱스 삽입, 자신 0으로 치환, dfs시작
@@ -70,5 +70,55 @@ for row in range(N):
 
 print(len(results))
 print('\n'.join(map(str, sorted(results))))
+```
+</details>
+
+
+# [연결 요의 개수/S2](https://www.acmicpc.net/problem/11724)
+- 복습 필요(재귀적)
+## 설계
+v1
+1. 전체 순회하면서 노드겸 인덱스가 방문 내역에 없다면 dfs 시작과 count += 1
+2. 방문하는 곳 추가와 인접 노드를 덱에 넣고 비어있을 때까지 반복
+    - 조건은 방문했던 곳에 없어야한다.
+v2
+1. 전체 순회하면서 노드겸 인덱스가 방문 내역에 없다면 dfs 시작과 count += 1
+2. 방문하는 곳 리스트 체크 후 인접 노드를 순회하며 dfs재귀 호출
+    - 조건은 방문하지 않았던 곳이어야한다.
+
+<details>
+<summary>코드</summary>
+
+```python
+import sys
+
+input = sys.stdin.readline
+sys.setrecursionlimit(10000)
+
+m, n = map(int, input().split())
+graph = {x : set() for x in range(1, m+1)}
+v = [False] * (m+1)
+
+for _ in range(n):
+    n1, n2 = map(int, input().split())
+    graph[n1].add(n2)
+    graph[n2].add(n1)
+    
+    
+def dfs(num):
+    v[num] = True
+    
+    for node in graph[num]:
+        if not v[node]:
+            dfs(node)
+
+cnt = 0
+
+for x in range(1, m+1):
+    if not v[x]:
+        cnt += 1
+        dfs(x)
+
+print(cnt)
 ```
 </details>
