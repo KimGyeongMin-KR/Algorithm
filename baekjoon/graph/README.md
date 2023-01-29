@@ -123,3 +123,11 @@ for x in range(1, m+1):
 print(cnt)
 ```
 </details>
+
+
+
+# [1만들기 /S3](https://www.acmicpc.net/problem/1463)
+
+<details>
+<summary>나의 정답</summary>
+</details>
