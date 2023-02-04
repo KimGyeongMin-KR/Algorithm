@@ -1,5 +1,7 @@
-# [이중 우선순위 큐](https://www.acmicpc.net/problem/7662)
-
+# [이중 우선순위 큐/G4](https://www.acmicpc.net/problem/7662)
+- 최소 힙과 최대 힙과 삭제 여부 싱크를 맞춰줄 리스트
+- 힙에서 제거 시 삭제 안 됐을 때까지 pop
+- 삭제 안된 최소 최대 출력
 
 
 # [전력망](https://www.acmicpc.net/problem/1620)
