@@ -20,7 +20,9 @@
 # [경로찾기/S1](https://www.acmicpc.net/problem/11403)
 
 ## 설계
-
+- row인덱스: [방문 노드 인덱스들] 방향 그래프 생성
+- row하나씩 시작으로하여 그래프 탐색 순회
+- 방문하는 곳을 1로 변경, queue에 방문하는 인덱스의 노드들 연장
 
 # [숨바꼭질/S1](https://www.acmicpc.net/problem/1697)
 
