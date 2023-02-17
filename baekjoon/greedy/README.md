@@ -34,3 +34,20 @@
 
 ## 초기 설계
 - 문제에서는 두 번째 배열의 재배열을 금지하였지만 최솟값을 출력하는 것이기에 상관 없다.
+
+
+# [거스름돈](https://www.acmicpc.net/problem/5585)
+
+
+<details>
+<summary>답</summary>
+
+```python
+n = 1000 - int(input())
+cnt = 0
+for x in [500, 100, 50, 10, 5, 1]:
+    cnt += n // x
+    n = n % x
+print(cnt)
+```
+</details>
