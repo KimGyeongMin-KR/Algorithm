@@ -1,3 +1,7 @@
+## [종이의 개수/S2](https://www.acmicpc.net/problem/1780)
+- 전체 순회하며 시작 값과 다르다면 9등분 재귀 호출
+
+
 ## [색종이 만들기/S2](https://www.acmicpc.net/problem/2630)
 
 - [x] 복습 필요, 재귀를 맛나게 쓰자
