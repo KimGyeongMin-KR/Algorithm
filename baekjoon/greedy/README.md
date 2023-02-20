@@ -1,3 +1,12 @@
+# [PPAP/G4](https://www.acmicpc.net/problem/16120)
+
+## 설계
+- P일 때는 p count +1, AP 일 때는 -1
+    - p count는 0 이하가 되면 중지
+    - 첫글자는 무조건 P (P만 있는 경우 PPAP)
+    - P거나 AP가 아니라면 NP (ex. AA)
+    - p count 는 끝났을 때 무조건 1이어야 정답
+
 
 # [회의실 배정](https://www.acmicpc.net/problem/1931)
 
