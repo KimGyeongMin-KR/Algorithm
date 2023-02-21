@@ -60,3 +60,11 @@ for x in [500, 100, 50, 10, 5, 1]:
 print(cnt)
 ```
 </details>
+
+
+
+# [수들의 합/S5](https://www.acmicpc.net/problem/)
+
+## 설계
+- 1부터 차례대로 더해주고 주어진 값보다 커지는 순간 더한 횟수 -1 출력
+
