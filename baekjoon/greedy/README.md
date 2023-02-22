@@ -68,3 +68,22 @@ print(cnt)
 ## 설계
 - 1부터 차례대로 더해주고 주어진 값보다 커지는 순간 더한 횟수 -1 출력
 
+
+# [수들의 합](https://www.acmicpc.net/problem/1439)
+- 이전과 다른 숫자일 때 +1
+
+<details>
+<summary>답</summary>
+
+```python
+str_num = input()
+idx_cnt = [0, 0, 1000000]
+prev = 3
+for num in str_num:
+    num = int(num)
+    if prev != num:
+        idx_cnt[num] += 1
+        prev = num
+print(min(idx_cnt))
+```
+</details>
