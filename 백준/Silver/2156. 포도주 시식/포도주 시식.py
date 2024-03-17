@@ -1,3 +1,6 @@
+import sys
+input = sys.stdin.readline
+
 N = int(input())
 input_list = [0] * 3 + [int(input()) for _ in range(N)]
 dp = [0] * 3 + [0] * N
