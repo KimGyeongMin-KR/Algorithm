@@ -1,37 +1,35 @@
-import sys
 from collections import deque
 
-N, M = map(int, sys.stdin.readline().strip().split())
 
-dr = [-1, 0, 1, 0]
-dc = [0, 1, 0, -1]
-ch = [[0] * M for _ in range(N)]
+def bfs(campus, sx, sy):
+    visited = [[0] * M for _ in range(N)]
+    q = deque([(sx, sy)])
+    visited[sx][sy] = 1
+    cnt = 0
 
-campus = []
-Q = deque()
+    while q:
+        x, y = q.popleft()
+        for dx, dy in [(0, 1), (1, 0), (0, -1), (-1, 0)]:
+            nx, ny = x + dx, y + dy
 
-for i in range(N):
-  campus.append(list(map(str, sys.stdin.readline().strip())))
-  for j in range(len(campus[i])):
-    if campus[i][j] == 'I':
-      Q.append([i, j])
-      ch[i][j] = 1
+            if 0 <= nx < N and 0 <= ny < M and not visited[nx][ny]:
+                if campus[nx][ny] == 'O':
+                    q.append((nx, ny))
+                    visited[nx][ny] = 1
+                elif campus[nx][ny] == 'P':
+                    q.append((nx, ny))
+                    visited[nx][ny] = 1
+                    cnt += 1
+    if cnt == 0:
+        return 'TT'
+    else:
+        return cnt
 
-answer = 0
+N, M = map(int, input().split())
+campus = [list(input().rstrip()) for _ in range(N)]
 
-while Q:
-  for _ in range(len(Q)):
-    r, c = Q.popleft()
-    for i in range(4):
-      nr, nc = r + dr[i], c + dc[i]
-      if 0 <= nr < N and 0 <= nc < M and ch[nr][nc] == 0 and campus[nr][nc] != 'X':
-        if campus[nr][nc] == 'P':
-          answer += 1
-
-        ch[nr][nc] = 1
-        Q.append([nr, nc])
-
-if answer:
-  print(answer)
-else:
-  print('TT')
+for x in range(N):
+    for y in range(M):
+        if campus[x][y] == 'I':
+            print(bfs(campus, x, y))
+            exit()
